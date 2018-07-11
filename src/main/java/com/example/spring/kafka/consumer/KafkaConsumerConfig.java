@@ -47,6 +47,4 @@ public class KafkaConsumerConfig {
     public KafkaMessageListener receiver(){
         return new KafkaMessageListener();
     }
-
-
 }
