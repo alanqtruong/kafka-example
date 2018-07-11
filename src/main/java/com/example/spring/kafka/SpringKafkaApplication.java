@@ -8,6 +8,9 @@ import org.springframework.kafka.support.SendResult;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+
 /**
  *  @author recklessN1nja
  */
@@ -15,6 +18,7 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 public class SpringKafkaApplication {
 
 	public static void main(String[] args) throws Exception {
+		CountDownLatch countDownLatch = new CountDownLatch(1);
 
 		ConfigurableApplicationContext context = SpringApplication.run(SpringKafkaApplication.class, args);
 
@@ -26,15 +30,17 @@ public class SpringKafkaApplication {
 			@Override
 			public void onSuccess(SendResult<String, String> result) {
 				System.out.println("Message successfully sent");
+				countDownLatch.countDown();
 			}
 
 			@Override
 			public void onFailure(Throwable ex) {
 				System.out.println("Message fail to sent");
+				countDownLatch.countDown();
 			}
 		});
 
-		Thread.sleep(10000);
+		countDownLatch.await(10, TimeUnit.SECONDS);
 		context.close();
 	}
 }
