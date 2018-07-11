@@ -6,7 +6,7 @@
 	<artifactId>kafka-example</artifactId>
 	<name>Spring Boot Kafka Example</name>
 	<description>Spring Boot Kafka Example</description>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<version>1.0</version>
 
 	<parent>
@@ -39,7 +39,6 @@
 	</dependencies>
 	<build>
 		<plugins>
-			<!-- Package as an executable jar/war -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
