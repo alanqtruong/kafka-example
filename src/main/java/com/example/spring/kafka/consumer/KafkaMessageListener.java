@@ -9,6 +9,6 @@ public class KafkaMessageListener {
 
     @KafkaListener(topics = "${message.topic.name}", containerFactory = "kafkaListenerContainerFactory")
     public void topicListener(String message) {
-        System.out.println("Received Messasge: " + message);
+        System.out.println("Received Message: " + message);
     }
 }
