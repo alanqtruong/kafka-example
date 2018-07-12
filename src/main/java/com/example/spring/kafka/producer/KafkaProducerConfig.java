@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Setup Kafka producer configuration
  * @author recklessN1nja
  */
 @Configuration

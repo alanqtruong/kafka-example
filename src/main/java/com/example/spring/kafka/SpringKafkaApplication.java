@@ -24,7 +24,7 @@ public class SpringKafkaApplication {
 
 		KafkaMessageProducer producer = context.getBean(KafkaMessageProducer.class);
 
-		ListenableFuture<SendResult<String, String>> future = producer.send("Hello, World!");
+		ListenableFuture<SendResult<String, String>> future = producer.send("Hello World!");
 
 		future.addCallback(new ListenableFutureCallback<SendResult<String, String>>() {
 			@Override

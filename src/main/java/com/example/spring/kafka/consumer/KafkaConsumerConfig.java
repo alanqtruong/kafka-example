@@ -14,6 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Setup kafka consumer configuration
  * @author recklessN1nja
  */
 @EnableKafka
