@@ -7,7 +7,7 @@ Example using spring boot, and kafka
 * build using mvn clean install -U
 * start up local kafka
 * setup kafka topic
-    * $ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic reckless
+    * $ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic testTopicId
 * run application
 
 ### Prerequisites

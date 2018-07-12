@@ -4,7 +4,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 
 /**
  * Setup listener for the defined topic
- * @author recklessN1nja
+ * @author alanqtruong
  */
 public class KafkaMessageListener {
 

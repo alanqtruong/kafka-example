@@ -12,7 +12,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 /**
- *  @author recklessN1nja
+ *  @author alanqtruong
  */
 @SpringBootApplication(scanBasePackages = "com.example.spring.kafka")
 public class SpringKafkaApplication {

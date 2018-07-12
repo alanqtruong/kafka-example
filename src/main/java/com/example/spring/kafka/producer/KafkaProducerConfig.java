@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  * Setup Kafka producer configuration
- * @author recklessN1nja
+ * @author alanqtruong
  */
 @Configuration
 public class KafkaProducerConfig {

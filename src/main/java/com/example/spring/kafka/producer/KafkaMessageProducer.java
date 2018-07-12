@@ -8,7 +8,7 @@ import org.springframework.util.concurrent.ListenableFuture;
 
 /**
  * Setup a message producer for the given topic
- * @author recklessN1nja
+ * @author alanqtruong
  */
 public class KafkaMessageProducer {
 
